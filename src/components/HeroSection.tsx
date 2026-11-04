@@ -1,7 +1,13 @@
 import FadeIn from './FadeIn';
 import ContactButton from './ContactButton';
+import { startLivingPortrait } from '../livingPortrait';
+import { useEffect } from 'react';
 
 export default function HeroSection() {
+  useEffect(() => {
+    startLivingPortrait();
+  }, []);
+
   return (
     <section
       id="home"
