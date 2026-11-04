@@ -1,6 +1,8 @@
 import HeroSection from './components/HeroSection';
 import MarqueeSection from './components/MarqueeSection';
 import AboutSection from './components/AboutSection';
+import ServicesSection from './components/ServicesSection';
+import ProjectsSection from './components/ProjectsSection';
 
 function PlaceholderSection({ id, label, dark = true }: { id?: string; label: string; dark?: boolean }) {
   return (
@@ -16,8 +18,8 @@ export default function App() {
       <HeroSection />
       <MarqueeSection />
       <AboutSection />
-      <PlaceholderSection id="price" label="Services" dark={false} />
-      <PlaceholderSection id="projects" label="Projects" />
+      <ServicesSection />
+      <ProjectsSection />
     </main>
   );
 }
