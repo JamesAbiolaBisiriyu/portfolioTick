@@ -1,0 +1,7 @@
+# Example: a coding model with a big enough context window for this project.
+# Pick a coder model your machine can run, e.g. qwen2.5-coder:7b / 14b / 32b.
+#   ollama pull qwen2.5-coder:14b
+#   ollama create portfolio-coder -f ollama/Modelfile.example
+FROM qwen2.5-coder:14b
+PARAMETER num_ctx 32768
+PARAMETER temperature 0.2
