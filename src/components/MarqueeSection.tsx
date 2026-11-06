@@ -1,20 +1,16 @@
 import { useEffect, useRef } from 'react';
-import bluebird from '../media/project/project-bluebird-ai.jpg';
-import terragrip from '../media/project/project-terragrip-3d.jpg';
-import japan from '../media/project/project-japan-travel.jpg';
-import haven from '../media/project/project-haven-design.jpg';
-import moss from '../media/project/project-3d-moss-branch.jpg';
+import resumeBuilder from '../media/project/project-resume-builder.jpg';
+import tollybis from '../media/project/project-tollybis.jpg';
+import todoApp from '../media/project/project-todo-app.jpg';
 
 const projects = {
-  bluebird,
-  terragrip,
-  japan,
-  haven,
-  moss,
+  resumeBuilder,
+  tollybis,
+  todoApp,
 };
 
-const rowOne = [projects.bluebird, projects.terragrip, projects.japan, projects.haven, projects.moss];
-const rowTwo = [projects.haven, projects.moss, projects.bluebird, projects.terragrip, projects.japan];
+const rowOne = [projects.resumeBuilder, projects.tollybis, projects.todoApp, projects.resumeBuilder, projects.tollybis];
+const rowTwo = [projects.todoApp, projects.tollybis, projects.resumeBuilder, projects.todoApp, projects.resumeBuilder];
 
 function MarqueeRow({ images, rowRef }: { images: string[]; rowRef: React.RefObject<HTMLDivElement | null> }) {
   return (
