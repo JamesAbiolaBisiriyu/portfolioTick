@@ -3,10 +3,10 @@ import { useRef } from 'react';
 import FadeIn from './FadeIn';
 
 const services = [
-  ['3D Modeling', 'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.'],
-  ['Rendering', 'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.'],
-  ['Motion Design', 'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.'],
-  ['Branding', 'Crafting cohesive visual identities — from logos to full brand systems — that communicate a clear and memorable presence.'],
+  ['Frontend Development', 'Responsive, accessible interfaces built with React and Bootstrap that feel clear and work well on every screen.'],
+  ['Backend and APIs', "Reliable APIs and databases that store, protect and serve your product's data."],
+  ['Full-Stack Web Apps', 'End-to-end products, from idea to a live deployment, with frontend, backend, database and hosting working together.'],
+  ['Business Websites and Automation', 'A clear online presence for small businesses, with repetitive tasks automated through AI-assisted workflows.'],
 ];
 
 function ServiceRow({ index, title, description }: { index: number; title: string; description: string }) {
