@@ -36,7 +36,7 @@ export default function HeroSection() {
       <div className="mt-6 w-full overflow-hidden sm:mt-4 md:-mt-5">
         <FadeIn delay={0.15} y={40}>
           <h1 className="hero-heading w-full whitespace-nowrap text-center text-[11vw] font-black uppercase leading-none tracking-tight sm:text-[11.8vw] md:text-[12.4vw] lg:text-[13vw]">
-            Hi, i’m James
+            Hi, i’m james
           </h1>
         </FadeIn>
       </div>
@@ -47,7 +47,7 @@ export default function HeroSection() {
             className="max-w-[160px] font-light uppercase leading-snug tracking-wide text-[#D7E2EA] sm:max-w-[220px] md:max-w-[260px]"
             style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
-            crafting high-impact 3d visual worlds and visionary digital experiences
+            ai-native full-stack developer building practical digital products for small businesses and startups
           </p>
         </FadeIn>
         <FadeIn delay={0.5} y={20}>
@@ -58,7 +58,7 @@ export default function HeroSection() {
       <div className="hero-portrait-wrap" id="magnetWrap">
         <FadeIn delay={0.6} y={30}>
           <div className="hero-portrait-inner" id="magnetInner">
-            <img id="faceFallback" src="/avatar/rest.png" alt="Portrait" />
+            <img id="faceFallback" src="/avatar/rest.png" alt="Portrait of James Abiola Bisiriyu" />
             <canvas id="faceGl" aria-hidden="true" />
             <div id="faceProps" aria-hidden="true">
               <svg id="faceFly" viewBox="0 0 32 32">
