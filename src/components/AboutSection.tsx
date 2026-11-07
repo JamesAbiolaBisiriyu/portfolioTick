@@ -15,7 +15,7 @@ export default function AboutSection() {
     <section
       id="about"
       className="relative flex min-h-screen flex-col items-center justify-center gap-12 overflow-hidden px-5 py-24 sm:gap-16 sm:px-8 md:gap-20 md:px-10"
-      style={{ background: '#FFFFFF' }}
+      style={{ background: '#0C0C0C' }}
     >
       <FadeIn delay={0.1} duration={0.9} x={-80} y={0} className="pointer-events-none absolute left-[1%] top-[4%] z-0 w-[80px] sm:left-[2%] sm:w-[130px] md:left-[4%] md:w-[170px]">
         <img src="/media/decor/moon.png" loading="lazy" className="h-auto w-full select-none" draggable={false} alt="" />
@@ -32,19 +32,19 @@ export default function AboutSection() {
 
       <div className="relative z-10 flex w-full max-w-[900px] flex-col items-center gap-10 sm:gap-14 md:gap-16">
         <FadeIn y={40}>
-          <p className="text-center text-sm font-bold uppercase tracking-[0.2em] text-[#0C0C0C]">
+          <p className="text-center text-sm font-bold uppercase tracking-[0.2em] text-[#D7E2EA]">
             AI-Native Full-Stack Developer
           </p>
-          <h2 className="hero-heading mt-5 text-center font-black leading-none tracking-tight text-[#0C0C0C]" style={{ fontSize: 'clamp(3rem, 10vw, 120px)' }}>
+          <h2 className="hero-heading mt-5 text-center font-black leading-none tracking-tight" style={{ fontSize: 'clamp(3rem, 10vw, 120px)' }}>
             Building useful products with care.
           </h2>
         </FadeIn>
         <AnimatedText
           text={aboutText}
-          className="max-w-[650px] text-center font-medium leading-relaxed text-[#0C0C0C]"
+          className="max-w-[650px] text-center font-medium leading-relaxed text-[#D7E2EA]"
           style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' }}
         />
-        <div className="grid w-full gap-10 text-[#0C0C0C] sm:grid-cols-2 sm:gap-12">
+        <div className="grid w-full gap-10 text-[#D7E2EA] sm:grid-cols-2 sm:gap-12">
           <FadeIn className="space-y-4">
             <h3 className="text-xl font-bold uppercase tracking-tight">Background</h3>
             <p className="leading-relaxed">My work is grounded in hands-on problem solving for Tollybis, a family frozen-food business, where a clearer digital presence and better workflows can create room for growth.</p>
@@ -58,7 +58,7 @@ export default function AboutSection() {
                   <h4 className="mb-2 font-semibold">{group.name}</h4>
                   <div className="flex flex-wrap gap-2">
                     {group.items.map((skill) => (
-                      <span key={skill} className="rounded-full border border-[#0C0C0C] px-3 py-1 text-xs uppercase">
+                      <span key={skill} className="rounded-full border border-[#D7E2EA] px-3 py-1 text-xs uppercase">
                         {skill}
                       </span>
                     ))}
@@ -68,7 +68,7 @@ export default function AboutSection() {
             </div>
           </FadeIn>
         </div>
-        <FadeIn className="w-full max-w-[650px] space-y-4 text-center text-[#0C0C0C]">
+        <FadeIn className="w-full max-w-[650px] space-y-4 text-center text-[#D7E2EA]">
           <h3 className="text-xl font-bold uppercase tracking-tight">How I work with AI</h3>
           <p className="leading-relaxed">I use AI as a thoughtful engineering partner: to explore ideas, shorten feedback loops, and automate repetitive work while keeping product decisions, review, and accountability human.</p>
         </FadeIn>
