@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type RefObject } from 'react';
 import resumeBuilder from '../media/project/project-resume-builder.jpg';
 import tollybis from '../media/project/project-tollybis.jpg';
 import todoApp from '../media/project/project-todo-app.jpg';
@@ -12,7 +12,7 @@ const projects = {
 const rowOne = [projects.resumeBuilder, projects.tollybis, projects.todoApp, projects.resumeBuilder, projects.tollybis];
 const rowTwo = [projects.todoApp, projects.tollybis, projects.resumeBuilder, projects.todoApp, projects.resumeBuilder];
 
-function MarqueeRow({ images, rowRef }: { images: string[]; rowRef: React.RefObject<HTMLDivElement | null> }) {
+function MarqueeRow({ images, rowRef }: { images: string[]; rowRef: RefObject<HTMLDivElement> }) {
   return (
     <div ref={rowRef} className="marquee-row ml-[-2160px] flex w-max gap-3">
       {Array.from({ length: 5 }, (_, copy) =>
